@@ -1,0 +1,74 @@
+{
+    "menu":[
+        {
+            "id": 1,
+            "nome": "cardapio",            
+            "descricao": [
+                {
+                "id": 1,
+                "nome": "entrada",            
+                "descricao": "abcd"
+    
+                },
+                {
+                "id": 2,
+                "nome": "prato principal",
+                "descricao": "abcd"
+    
+                },
+                {
+                "id": 3,
+                "nome": "sobremesa",
+                "descricao": "abcd"
+    
+                }
+    
+            ]
+        },
+        
+        {
+            "id": 2,
+            "nome": "cozinha molecular",  
+            "descricao":
+            {
+                "descricao": "abcd"
+
+            }
+        },
+        {
+            "id": 3,
+            "nome": "tecnicas",
+            "descricao": [
+                {
+                    "id": 1,
+                    "descricao": "abcd",
+                    "imagem": "link"
+                },
+                {
+                    "id": 2,
+                    "descricao": "abcd",
+                    "imagem": "link"
+                },
+                {
+                    "id": 3,
+                    "descricao": "abcd",
+                    "imagem": "link"
+                }
+        
+            ]
+        },
+        {
+            "id": 4,
+            "nome": "sobre",  
+            "descricao":
+            {
+                "descricao": "Esse projeto é uma parceria entre os cursos da Computação e Engenharia de Computação sobre a orientação da Profª Drª Daniela Bagatini e do curso de Tecnologia em Gastronomia sobre orientação da Profª MS Carla Maicá da Universidade de Santa Cruz do Sul. A ideia foi unir as duas áreas do conhecimento, utilizando o trabalho de conclusão de curso do aluno Lucas Oliveira, para ampliar a experiência do usuário... ou melhor, do comensal."
+                
+
+            }
+        }
+
+    ]
+    
+
+}

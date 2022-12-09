@@ -1,0 +1,18 @@
+version: "3.1"
+
+rules:
+
+- rule: Se despede quando o usuário se despede
+  steps:
+  - intent: despedida
+  - action: utter_despedida
+
+- rule: Mostra o cardápio sempre que o usuário pede
+  steps:
+  - intent: ajuda
+  - action: utter_ajuda 
+
+- rule: Mostra o cardápio sempre que o usuário pede
+  steps:
+  - intent: teste
+  - action: action_hello_world 

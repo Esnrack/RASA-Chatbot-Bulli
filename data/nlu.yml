@@ -1,0 +1,61 @@
+version: "3.1"
+
+nlu:
+- intent: cumprimento
+  examples: |
+    - oi
+    - olá
+    - bao
+    - eae
+    - opa
+    - uepa
+    - salve
+    - ei
+
+- intent: despedida
+  examples: |
+    - tchau
+    - adeus
+    - falou
+    - flw
+    - até
+    - até mais
+    - até logo
+    - a gente se vê
+
+- intent: positivo
+  examples: |
+    - sim
+    - claro
+    - aham
+    - pode ser
+    - s
+    - agora
+
+- intent: negativo
+  examples: |
+    - não
+    - n
+    - nem
+    - jamais
+    - nunca
+    - nope
+    - talvez outra hora
+
+- intent: ajuda
+  examples: |
+    - pode me ajudar?
+    - me ajuda
+    - ajuda
+    - ajude-me
+    - pode me ajudar
+    - pode me mostrar o cardápio
+    - pode me mostrar o menu
+    - me mostre o menu
+    - me mostre o cardápio
+    - cardápio
+    - menu
+
+- intent: teste
+  examples: |
+    - teste

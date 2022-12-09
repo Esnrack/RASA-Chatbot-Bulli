@@ -1,0 +1,27 @@
+version: "3.1"
+
+intents:
+  - cumprimento
+  - despedida
+  - negativo
+  - positivo
+  - ajuda
+  - teste
+
+actions:
+  - action_hello_world
+
+responses:
+  utter_cumprimento:
+  - text: "Oi, posso lhe ajudar com algo?"
+
+  utter_ajuda:
+  - text: "Aqui está o cardápio: "
+    image: "https://binaries.templates.cdn.office.net/support/templates/pt-br/lt10244803_quantized.png"
+  
+  utter_despedida:
+  - text: "Adeus."
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
