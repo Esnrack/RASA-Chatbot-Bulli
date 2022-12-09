@@ -15,4 +15,31 @@ rules:
 - rule: Mostra o cardápio sempre que o usuário pede
   steps:
   - intent: teste
-  - action: action_hello_world 
+  - action: action_cardapio
+
+- rule: Submit formulario pedir_opcoes
+  condition:
+  - active_loop: pedir_opcoes
+  steps:
+  - action: pedir_opcoes
+  - active_loop: null
+  - action: utter_opcao
+  - action: action_cardapio
+  - action: pedir_submenu
+  - active_loop: pedir_submenu
+  - action: pedir_submenu
+  - active_loop: null
+  - action: utter_submenu
+  - action: action_subcardapio
+
+- rule: Submit formulario pedir_submenu
+  condition:
+  - active_loop: pedir_opcoes
+  - slot_was_set:
+    - name: "2"
+    - name: "4"
+  steps:
+  - action: pedir_opcoes
+  - active_loop: null
+  - action: utter_opcao
+  - action: action_cardapio

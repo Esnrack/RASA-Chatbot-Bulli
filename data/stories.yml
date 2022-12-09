@@ -5,15 +5,8 @@ stories:
 - story: caminho positivo
   steps:
   - intent: cumprimento
-  - action: utter_cumprimento
-  - intent: positivo
-  - action: utter_ajuda
-  - intent: despedida
-  - action: utter_despedida
-
-- story: caminho negativo
-  steps:
-  - intent: cumprimento
-  - action: utter_cumprimento
-  - intent: negativo
-  - action: utter_despedida
+  - action: utter_inicio
+  - action: action_menu
+  - action: pedir_opcoes
+  - active_loop: pedir_opcoes  
+  

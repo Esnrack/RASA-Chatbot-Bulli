@@ -24,16 +24,12 @@
                 }
     
             ]
-        },
-        
+        },        
         {
             "id": 2,
             "nome": "cozinha molecular",  
-            "descricao":
-            {
-                "descricao": "abcd"
+            "descricao": "abcd"
 
-            }
         },
         {
             "id": 3,
@@ -60,12 +56,8 @@
         {
             "id": 4,
             "nome": "sobre",  
-            "descricao":
-            {
-                "descricao": "Esse projeto é uma parceria entre os cursos da Computação e Engenharia de Computação sobre a orientação da Profª Drª Daniela Bagatini e do curso de Tecnologia em Gastronomia sobre orientação da Profª MS Carla Maicá da Universidade de Santa Cruz do Sul. A ideia foi unir as duas áreas do conhecimento, utilizando o trabalho de conclusão de curso do aluno Lucas Oliveira, para ampliar a experiência do usuário... ou melhor, do comensal."
-                
+            "descricao": "Esse projeto é uma parceria entre os cursos da Computação e Engenharia de Computação sobre a orientação da Profª Drª Daniela Bagatini e do curso de Tecnologia em Gastronomia sobre orientação da Profª MS Carla Maicá da Universidade de Santa Cruz do Sul. A ideia foi unir as duas áreas do conhecimento, utilizando o trabalho de conclusão de curso do aluno Lucas Oliveira, para ampliar a experiência do usuário... ou melhor, do comensal."               
 
-            }
         }
 
     ]

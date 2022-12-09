@@ -7,6 +7,18 @@ recipe: default.v1
 language: en
 
 pipeline:
+  - name: "WhitespaceTokenizer"
+  - name: "CountVectorsFeaturizer"
+  - name: DIETClassifier
+    epochs: 100
+    entity_recognition: True
+  - name: "RegexFeaturizer"
+    case_sensitive: false
+    use_word_boundaries: True
+  - name: ResponseSelector
+    epochs: 100
+  - name: FallbackClassifier
+    threshold: 0.8
 # # No configuration for the NLU pipeline was provided. The following default pipeline was used to train your model.
 # # If you'd like to customize it, uncomment and adjust the pipeline.
 # # See https://rasa.com/docs/rasa/tuning-your-model for more information.
@@ -32,6 +44,12 @@ pipeline:
 # Configuration for Rasa Core.
 # https://rasa.com/docs/rasa/core/policies/
 policies:
+  - name: RulePolicy
+  - name: TEDPolicy
+    max_history: 8
+    epochs: 200
+  - name: AugmentedMemoizationPolicy
+    max_history: 6
 # # No configuration for policies was provided. The following default policies were used to train your model.
 # # If you'd like to customize them, uncomment and adjust the policies.
 # # See https://rasa.com/docs/rasa/policies for more information.

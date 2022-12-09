@@ -8,8 +8,37 @@ intents:
   - ajuda
   - teste
 
+slots:
+  name:
+    type: text
+    mappings:
+      - type: custom
+        action: action_input
+        not_intent: 
+          - cumprimento
+  submenu:
+    type: text
+    mappings:
+      - type: custom
+        action: action_input_submenu
+        not_intent: 
+          - cumprimento
+
 actions:
-  - action_hello_world
+  - action_cardapio
+  - action_input
+  - action_menu
+  - action_input_submenu
+  - action_subcardapio
+  - action_submenu
+
+forms:
+  pedir_opcoes:
+    required_slots:
+      - name
+  pedir_submenu:
+    required_slots:
+      - submenu
 
 responses:
   utter_cumprimento:
@@ -21,6 +50,21 @@ responses:
   
   utter_despedida:
   - text: "Adeus."
+
+  utter_ask_name:
+  - text: "Digite o número da opção desejada:"
+
+  utter_ask_submenu:
+  - text: "Digite o número da opção desejada:"
+
+  utter_opcao:
+  - text: "Você digitou a opção {name}"
+
+  utter_submenu:
+  - text: "Você digitou a opção {submenu}"
+
+  utter_inicio:
+  - text: "Olá, eu sou o bot Bulli. Sou especializado em cozinha molecular e parceiro do Lucas Oliveira. Temos tantas coisas para contar para você sobre o projeto! \nQue tal conhecer mais? Escolha uma opção do menu para explorar nossa cozinha. \n"
 
 session_config:
   session_expiration_time: 60
