@@ -1,0 +1,39 @@
+{
+  "lookup": {
+    "rules": {
+      "[{\"active_loop\": {\"name\": \"should_not_be_set\"}, \"prev_action\": {\"action_name\": \"pedir_opcoes\"}}]": "utter_opcao",
+      "[{\"active_loop\": {\"name\": \"should_not_be_set\"}, \"prev_action\": {\"action_name\": \"pedir_opcoes\"}}, {\"active_loop\": {\"name\": \"should_not_be_set\"}, \"prev_action\": {\"action_name\": \"utter_opcao\"}}]": "action_cardapio",
+      "[{\"active_loop\": {\"name\": \"should_not_be_set\"}, \"prev_action\": {\"action_name\": \"pedir_opcoes\"}}, {\"active_loop\": {\"name\": \"should_not_be_set\"}, \"prev_action\": {\"action_name\": \"utter_opcao\"}}, {\"active_loop\": {\"name\": \"should_not_be_set\"}, \"prev_action\": {\"action_name\": \"action_cardapio\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"ajuda\"}}]": "utter_ajuda",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"ajuda\"}}, {\"prev_action\": {\"action_name\": \"utter_ajuda\"}, \"user\": {\"intent\": \"ajuda\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"cumprimento\"}}]": "utter_inicio",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"cumprimento\"}}, {\"prev_action\": {\"action_name\": \"utter_inicio\"}, \"user\": {\"intent\": \"cumprimento\"}}]": "action_menu",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"cumprimento\"}}, {\"prev_action\": {\"action_name\": \"utter_inicio\"}, \"user\": {\"intent\": \"cumprimento\"}}, {\"prev_action\": {\"action_name\": \"action_menu\"}, \"user\": {\"intent\": \"cumprimento\"}}]": "pedir_opcoes",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"cumprimento\"}}, {\"prev_action\": {\"action_name\": \"utter_inicio\"}, \"user\": {\"intent\": \"cumprimento\"}}, {\"prev_action\": {\"action_name\": \"action_menu\"}, \"user\": {\"intent\": \"cumprimento\"}}, {\"active_loop\": {\"name\": \"pedir_opcoes\"}, \"prev_action\": {\"action_name\": \"pedir_opcoes\"}, \"user\": {\"intent\": \"cumprimento\"}}]": "action_listen"
+    },
+    "rule_only_slots": [],
+    "rule_only_loops": [
+      "pedir_opcoes"
+    ],
+    "rules_for_loop_unhappy_path": {
+      "[{\"prev_action\": {\"action_name\": \"action_menu\"}}, {\"active_loop\": {\"name\": \"pedir_opcoes\"}, \"prev_action\": {\"action_name\": \"pedir_opcoes\"}, \"user\": {\"intent\": \"cumprimento\"}}]": "do_not_predict_loop_action"
+    },
+    "rules_not_in_stories": [
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"cumprimento\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"ajuda\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"cumprimento\"}}, {\"prev_action\": {\"action_name\": \"utter_inicio\"}, \"user\": {\"intent\": \"cumprimento\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"cumprimento\"}}, {\"prev_action\": {\"action_name\": \"utter_inicio\"}, \"user\": {\"intent\": \"cumprimento\"}}, {\"prev_action\": {\"action_name\": \"action_menu\"}, \"user\": {\"intent\": \"cumprimento\"}}]",
+      "handling active loops and forms - pedir_opcoes - action_listen",
+      "predicting default action with intent session_start",
+      "handling active loops and forms - pedir_opcoes",
+      "handling active loops and forms - pedir_submenu - action_listen",
+      "[{\"active_loop\": {\"name\": \"should_not_be_set\"}, \"prev_action\": {\"action_name\": \"pedir_opcoes\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"ajuda\"}}, {\"prev_action\": {\"action_name\": \"utter_ajuda\"}, \"user\": {\"intent\": \"ajuda\"}}]",
+      "predicting default action with intent restart",
+      "handling active loops and forms - pedir_submenu",
+      "[{\"active_loop\": {\"name\": \"should_not_be_set\"}, \"prev_action\": {\"action_name\": \"pedir_opcoes\"}}, {\"active_loop\": {\"name\": \"should_not_be_set\"}, \"prev_action\": {\"action_name\": \"utter_opcao\"}}]",
+      "predicting default action with intent back",
+      "[{\"active_loop\": {\"name\": \"should_not_be_set\"}, \"prev_action\": {\"action_name\": \"pedir_opcoes\"}}, {\"active_loop\": {\"name\": \"should_not_be_set\"}, \"prev_action\": {\"action_name\": \"utter_opcao\"}}, {\"active_loop\": {\"name\": \"should_not_be_set\"}, \"prev_action\": {\"action_name\": \"action_cardapio\"}}]"
+    ]
+  }
+}

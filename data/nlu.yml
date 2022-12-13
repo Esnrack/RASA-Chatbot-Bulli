@@ -11,39 +11,6 @@ nlu:
     - uepa
     - salve
     - ei
-
-- intent: despedida
-  examples: |
-    - tchau
-    - adeus
-    - falou
-    - flw
-    - até
-    - até mais
-    - até logo
-    - a gente se vê
-
-- intent: positivo
-  examples: |
-    - sim
-    - claro
-    - aham
-    - pode ser
-    - s
-    - agora
-
-- intent: negativo
-  examples: |
-    - não
-    - n
-    - nem
-    - jamais
-    - nunca
-    - nope
-    - talvez outra hora
-
-- intent: ajuda
-  examples: |
     - pode me ajudar?
     - me ajuda
     - ajuda
@@ -56,6 +23,9 @@ nlu:
     - cardápio
     - menu
 
-- intent: teste
+- intent: ajuda
   examples: |
-    - teste
+    - 1
+    - 2
+    - 3
+    - 4

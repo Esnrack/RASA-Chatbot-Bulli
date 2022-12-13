@@ -2,11 +2,11 @@ version: "3.1"
 
 stories:
 
-- story: caminho positivo
-  steps:
-  - intent: cumprimento
-  - action: utter_inicio
-  - action: action_menu
-  - action: pedir_opcoes
-  - active_loop: pedir_opcoes  
+#- story: caminho positivo
+#  steps:
+#  - intent: cumprimento
+#  - action: utter_inicio
+#  - action: action_menu
+#  - action: pedir_opcoes
+#  - active_loop: pedir_opcoes  
   

@@ -2,11 +2,7 @@ version: "3.1"
 
 intents:
   - cumprimento
-  - despedida
-  - negativo
-  - positivo
   - ajuda
-  - teste
 
 slots:
   name:
@@ -20,7 +16,7 @@ slots:
     type: text
     mappings:
       - type: custom
-        action: action_input_submenu
+        action: action_apagar_input
         not_intent: 
           - cumprimento
 
@@ -28,7 +24,7 @@ actions:
   - action_cardapio
   - action_input
   - action_menu
-  - action_input_submenu
+  - action_apagar_input
   - action_subcardapio
   - action_submenu
 

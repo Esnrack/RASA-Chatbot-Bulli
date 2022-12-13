@@ -3,60 +3,23 @@
         {
             "id": 1,
             "nome": "cardapio",            
-            "descricao": [
-                {
-                "id": 1,
-                "nome": "entrada",            
-                "descricao": "abcd"
-    
-                },
-                {
-                "id": 2,
-                "nome": "prato principal",
-                "descricao": "abcd"
-    
-                },
-                {
-                "id": 3,
-                "nome": "sobremesa",
-                "descricao": "abcd"
-    
-                }
-    
-            ]
+            "descricao": "Você está curioso em saber mais sobre a entrada? Vou contar os detalhes para você.\nBaseada na típica salada servida junto ao PF, a entrada é apresentada como um prato de texturas: alface, tomate, cebola, os mesmos elementos, mas com texturas diferentes.\n\nJá que abriu o apetite com a entrada, vamos à estrela do menu... o Prato Principal\nA releitura de um dos pratos mais vendidos no Brasil é apresentado combinando ingredientes clássicos de um Prato Feito com técnicas da gastronomia contemporânea.\n\nAgora vamos adoçar o menu.\nPara finalizar o menu, a bergamota foi ingrediente enaltecido, fruta muito consumida no sul do país após as refeições."
         },        
         {
             "id": 2,
             "nome": "cozinha molecular",  
-            "descricao": "abcd"
+            "descricao": "Você está curioso sobre a Cozinha Molecular? Vou contar mais sobre esse encontro entre ciência e gastronomia.\nNo século XX ocorreu a mescla de ciência e gastronomia, reunindo chefs e cientistas de diferentes áreas do conhecimento.\nA cozinha molecular não é um tipo de cozinha, mas sim um conjunto de técnicas para ser usada em qualquer cozinha."
 
         },
         {
             "id": 3,
             "nome": "tecnicas",
-            "descricao": [
-                {
-                    "id": 1,
-                    "descricao": "abcd",
-                    "imagem": "link"
-                },
-                {
-                    "id": 2,
-                    "descricao": "abcd",
-                    "imagem": "link"
-                },
-                {
-                    "id": 3,
-                    "descricao": "abcd",
-                    "imagem": "link"
-                }
-        
-            ]
+            "descricao": "Nuvem de alface: Leve água e sal para ferver. Adicione a goma de tapioca granulada, cozinhe até que fique transparente.\nEspalhe a massa sobre uma folha de silicone e leve para secar a 60ºC. Corte em pedaços e frite em óleo quente.\n\nBalão de batata: Corte as batatas em fatias finas, com um pincel passe clara de ovo sobre as fatias, polvilhe amido de batata, cole uma fatia em outra. Corte com um aro e frite em óleo a 170ºC."
         },
         {
             "id": 4,
             "nome": "sobre",  
-            "descricao": "Esse projeto é uma parceria entre os cursos da Computação e Engenharia de Computação sobre a orientação da Profª Drª Daniela Bagatini e do curso de Tecnologia em Gastronomia sobre orientação da Profª MS Carla Maicá da Universidade de Santa Cruz do Sul. A ideia foi unir as duas áreas do conhecimento, utilizando o trabalho de conclusão de curso do aluno Lucas Oliveira, para ampliar a experiência do usuário... ou melhor, do comensal."               
+            "descricao": "Esse projeto é uma parceria entre os cursos da Computação e Engenharia de Computação sobre a orientação da Profª Drª Daniela Bagatini e do curso de Tecnologia em Gastronomia sobre orientação da Profª Me Carla Maicá da Universidade de Santa Cruz do Sul.\nA ideia foi unir as duas áreas do conhecimento, utilizando o trabalho de conclusão de curso do aluno Lucas Oliveira, para ampliar a experiência do usuário... ou melhor, do comensal.\nEquipe de trabalho:\nDaniela Füchtenbusch, Elena Holst, Ricardo Peters, Caio Balczarek, Tércio da Silva e Kaio Rodrigues."               
 
         }
 

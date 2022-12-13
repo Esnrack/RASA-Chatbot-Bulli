@@ -2,44 +2,40 @@ version: "3.1"
 
 rules:
 
-- rule: Se despede quando o usuário se despede
-  steps:
-  - intent: despedida
-  - action: utter_despedida
-
 - rule: Mostra o cardápio sempre que o usuário pede
   steps:
   - intent: ajuda
   - action: utter_ajuda 
 
-- rule: Mostra o cardápio sempre que o usuário pede
-  steps:
-  - intent: teste
-  - action: action_cardapio
-
-- rule: Submit formulario pedir_opcoes
-  condition:
-  - active_loop: pedir_opcoes
-  steps:
-  - action: pedir_opcoes
-  - active_loop: null
-  - action: utter_opcao
-  - action: action_cardapio
-  - action: pedir_submenu
-  - active_loop: pedir_submenu
-  - action: pedir_submenu
-  - active_loop: null
-  - action: utter_submenu
-  - action: action_subcardapio
+#- rule: Submit formulario pedir_opcoes
+#  condition:
+#  - active_loop: pedir_opcoes
+#  steps:
+#  - action: pedir_opcoes
+#  - active_loop: null
+#  - action: utter_opcao
+#  - action: action_cardapio
+#  - action: pedir_submenu
+#  - active_loop: pedir_submenu
+#  - action: pedir_submenu
+#  - active_loop: null
+#  - action: utter_submenu
+#  - action: action_subcardapio
 
 - rule: Submit formulario pedir_submenu
   condition:
   - active_loop: pedir_opcoes
-  - slot_was_set:
-    - name: "2"
-    - name: "4"
   steps:
   - action: pedir_opcoes
   - active_loop: null
   - action: utter_opcao
   - action: action_cardapio
+  - action: action_apagar_input
+
+- rule: Mostra o cardápio sempre que o usuário pede
+  steps:
+  - intent: cumprimento
+  - action: utter_inicio
+  - action: action_menu
+  - action: pedir_opcoes
+  - active_loop: pedir_opcoes

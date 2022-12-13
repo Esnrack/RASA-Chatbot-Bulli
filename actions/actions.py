@@ -129,16 +129,13 @@ class ActionInput(Action):
 
         return [SlotSet('name', value)]
 
-class ActionInputSubmenu(Action):
+class ActionApagarInput(Action):
 
     def name(self) -> Text:
-        return "action_input_submenu"
+        return "action_apagar_input"
 
     def run(self, dispatcher: CollectingDispatcher,
             tracker: Tracker,
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
 
-        value = tracker.latest_message['text']
-        print(value)
-
-        return [SlotSet('submenu', value)]
+        return [SlotSet('name', None)]
